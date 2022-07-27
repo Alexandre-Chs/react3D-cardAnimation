@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.container {
+  height: 100vh;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  position: relative;
+  width: 200px;
+  height: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:nth-child(1) {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+}
+
+.text-content {
+  padding: 5px;
+  height: 300px;
+  transform: translateY(300px);
+  background: #ffffffb9;
+}
+
+.bg1 {
+  background-image: url("./images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2 {
+  background-image: url("./images/bg2.jpg");
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: 80%;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.bg3 {
+  background-image: url("./images/bg3.jpg");
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: 80%;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c {
+  position: absolute;
 }
